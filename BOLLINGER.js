@@ -3,7 +3,7 @@ function BOLLINGER(T, MULTIPLIER, OHLC) {
   T = T ?? 20;
   MULTIPLIER = MULTIPLIER ?? 2;
   
-  //Array-Format (OHLCV): [[OPEN, HIGH, LOW, CLOSE], ...]
+  //Array-Format (OHLC): [[OPEN, HIGH, LOW, CLOSE], ...]
 
   if(!OHLCV){throw Error(`Missing: OHLC-Array`)}
 
