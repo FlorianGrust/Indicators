@@ -6,7 +6,7 @@ function CMF(T, OHLCV) {
 
   if(!OHLCV){throw Error(`Missing: OHLCV-Array`)}
 
-  if(OHLCV.length < T){throw Error(`OHLCV-Array only has ${OHLC.length} entries, however at least ${T} entries (T) are needed.`)}
+  if(OHLCV.length < T){throw Error(`OHLCV-Array only has ${OHLCV.length} entries, however at least ${T} entries (T) are needed.`)}
 
   OHLCV = OHLCV.slice(-T);
 
